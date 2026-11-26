@@ -1,1 +1,23 @@
 
+#pipeline name
+name: first worklow
+
+#set trigger
+on:
+    push:
+        branches:
+             - main
+
+
+jobs:
+    print-message:
+        runs-on: ubunutu-latest
+
+
+        steps:
+        # step1
+          - name : print wlecome to my club
+            run: echo 'welcome to github action'
+          # step2
+          - name : print hello 
+            run: echo 'welcome to life'
